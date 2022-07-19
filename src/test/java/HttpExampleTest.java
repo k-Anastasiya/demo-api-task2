@@ -27,7 +27,7 @@ public class HttpExampleTest {
     @Test
     public void checksStusCodePostVerbTest(){
         HttpClient httpClient = HttpClients.createDefault();
-        HttpPost httpPost = new HttpPost("https://www.onliner.by/");
+        HttpPost httpPost = new HttpPost("https://www.yandex.ru/");
         httpPost.setHeader("qwe","qqew");
         try {
             HttpResponse httpResponse = httpClient.execute(httpPost);

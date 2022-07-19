@@ -12,15 +12,18 @@ public class HttpExample {
     public static void main(String[] args) throws IOException {
 
         HttpClient httpClient = HttpClients.createDefault();
-        HttpGet httpGet= new HttpGet("https://www.onliner.by/");
+
+        HttpGet httpGet= new HttpGet("https://www.yandex.ru/");
         HttpResponse httpResponse = httpClient.execute(httpGet);
+
         String body = EntityUtils.toString(httpResponse.getEntity());
         System.out.println(body);
-        HttpPost httpPost = new HttpPost("https://www.onliner.by/");
-        httpPost.setHeader("qwe","qqew");
+
+        HttpPost httpPost = new HttpPost("https://www.yandex.ru/");
+      httpPost.setHeader("qwe","qwe");
         httpClient.execute(httpPost);
-         body = EntityUtils.toString(httpResponse.getEntity());
-        System.out.println(body);
+   body = EntityUtils.toString(httpResponse.getEntity());
+       System.out.println(body);
 
 
 

@@ -10,7 +10,7 @@ import java.io.IOException;
 
 public class HttpExampleTest {
     @Test
-     public void checksStusCodeGetVerbTest(){
+     public void checksStatusCodeGetVerbTest(){
         HttpClient httpClient = HttpClients.createDefault();
         HttpGet httpGet = new HttpGet("https://www.onliner.by/");
         try {
@@ -25,7 +25,7 @@ public class HttpExampleTest {
     }
 
     @Test
-    public void checksStusCodePostVerbTest(){
+    public void checksStatusCodePostVerbTest(){
         HttpClient httpClient = HttpClients.createDefault();
         HttpPost httpPost = new HttpPost("https://www.yandex.ru/");
         httpPost.setHeader("qwe","qqew");

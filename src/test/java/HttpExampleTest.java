@@ -12,7 +12,7 @@ public class HttpExampleTest {
     @Test
      public void checksStatusCodeGetVerbTest(){
         HttpClient httpClient = HttpClients.createDefault();
-        HttpGet httpGet = new HttpGet("https://www.onliner.by/");
+        HttpGet httpGet = new HttpGet("https://www.yandex.ru/");
         try {
             HttpResponse httpResponse = httpClient.execute(httpGet);
            int expected = 200;
